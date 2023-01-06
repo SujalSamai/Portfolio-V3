@@ -6,7 +6,7 @@ import instagram from "../assets/instagram.svg";
 
 export default function Socials() {
   return (
-    <div className="socials flex flex-col fixed top-[25rem] left-[2rem]">
+    <div className="hidden socials md:flex flex-col fixed top-[25rem] left-[2rem]">
       <a className="" href="https://twitter.com/SujalSamai">
         <img
           className="w-4/6 p-2 hover:-translate-y-1 hover:transition ease-out duration-200 rounded-3xl hover:bg-gr"

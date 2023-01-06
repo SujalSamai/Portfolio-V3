@@ -1,7 +1,7 @@
 import "../App.css";
 export default function EmailSection() {
   return (
-    <div className="email fixed top-[12rem] right-[0rem]">
+    <div className="email hidden md:block fixed top-[12rem] right-[0rem]">
       <p className="text-slate-500 text-sm rotate-90 hover:text-gr">
         <a className="cursor-pointer " href="mailto:sujalsamai123@gmail.com">
           sujalsamai123@gmail.com

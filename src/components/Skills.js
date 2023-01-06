@@ -5,16 +5,17 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="w-7/12 mx-auto border-[1px] border-gr rounded-sm p-16 "
+      className="w-10/12 md:w-7/12 mx-auto hover:scale-105 hover:transition ease-in-out duration-300 rounded-sm p-8 md:p-16 shadow-2xl"
     >
-      <div className="w-7/12 flex justify-between items-center">
-        <h1 className="text-2xl text-slate-300 font-inter font-semibold">
-          <span className="font-martian text-gr text-lg">02. </span>Skills
+      <div className="md:w-7/12 flex justify-between items-center">
+        <h1 className="text-xl md:text-2xl text-slate-300 font-inter font-bold">
+          <span className="font-martian text-gr text-sm md:text-lg">02. </span>
+          Skills
         </h1>
-        <p className="w-8/12 border-t-[1px] border-slate-600"></p>
+        <p className="w-7/12 md:w-8/12 border-t-[1px] border-slate-600"></p>
       </div>
       <div className="flex mt-8">
-        <div className="flex-col text-slate-400 w-7/12">
+        <div className="flex-col text-slate-400 md:w-7/12">
           <div className="my-5">
             <h4 className="text-gr font-martian text-sm">Languages</h4>
             <p className="my-3 flex text-sm">
@@ -53,7 +54,7 @@ export default function Skills() {
             </p>
           </div>
         </div>
-        <div className="w-5/12">
+        <div className="hidden md:block w-5/12">
           <img className="computer" src={computer}></img>
         </div>
       </div>

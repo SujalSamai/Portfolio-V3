@@ -1,9 +1,13 @@
-import { useState } from "react";
+import twitter from "../assets/twitter.svg";
+import linkedin from "../assets/linkedin.svg";
+import github from "../assets/github.svg";
+import hashnode from "../assets/hashnode.svg";
+import instagram from "../assets/instagram.svg";
 
 function Contact() {
   return (
-    <section id="contact" className="w-5/12 m-auto">
-      <h4 className="text-gr text-base font-martian text-center">
+    <section id="contact" className="w-10/12 md:w-5/12 m-auto">
+      <h4 className="text-gr md:text-base font-martian text-center">
         04. What's next?
       </h4>
       <h1 className="my-5 text-slate-300 text-5xl font-bold text-center">
@@ -54,12 +58,44 @@ function Contact() {
           </div>
         </form>
       </div>
-      <div className="mt-10">
-        <p className="text-slate-500 text-center font-martian text-xs pt-5">
-          Built by Sujal Samai
+      <div className="mt-10 w-10/12 mx-auto flex justify-around md:hidden">
+        <a className="" href="https://twitter.com/SujalSamai">
+          <img
+            className="w-7/12 mx-auto p-2 hover:-translate-y-1 hover:transition ease-out duration-200 rounded-3xl hover:bg-gr"
+            src={twitter}
+          ></img>
+        </a>
+        <a className="" href="https://www.linkedin.com/in/sujal-samai/">
+          <img
+            className="w-7/12 p-2 mx-[0.70rem] hover:-translate-y-1 hover:transition ease-out duration-200 rounded-3xl hover:bg-gr"
+            src={linkedin}
+          ></img>
+        </a>
+        <a className="" href="https://github.com/SujalSamai">
+          <img
+            className="w-7/12 mx-auto p-2 hover:-translate-y-1 hover:transition ease-out duration-200 rounded-3xl hover:bg-gr"
+            src={github}
+          ></img>
+        </a>
+        <a className="" href="https://sujalsamai.hashnode.dev/">
+          <img
+            className="w-7/12 mx-auto p-2 hover:-translate-y-1 hover:transition ease-out duration-200 rounded-3xl hover:bg-gr"
+            src={hashnode}
+          ></img>
+        </a>
+        <a className="" href="#">
+          <img
+            className="w-7/12 mx-auto p-2 hover:-translate-y-1 hover:transition ease-out duration-200 rounded-3xl hover:bg-gr"
+            src={instagram}
+          ></img>
+        </a>
+      </div>
+      <div className="md:mt-10">
+        <p className="text-slate-500 text-center font-martian text-[0.65rem] md:text-xs pt-5">
+          Built with React & Tailwind CSS.
         </p>
-        <p className="text-slate-500 text-center font-martian text-xs pt-2 pb-5">
-          with React & Tailwind CSS 💖
+        <p className="text-slate-500 text-center font-martian text-[0.65rem] md:text-xs pt-2 pb-5">
+          by Sujal Samai 💖
         </p>
       </div>
     </section>
