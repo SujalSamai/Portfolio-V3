@@ -8,11 +8,17 @@ import MainProjects from "./components/MainProjects";
 import Contact from "./components/Contact";
 import Socials from "./components/Socials";
 import EmailSection from "./components/EmailSection";
+import HamburgerNav from "./components/HamburgerNav";
 
 function App() {
   return (
     <div className="bg-gradient-to-b from-bl to-lbl font-inter h-max">
-      <Navbar />
+      <div className="hidden lg:block">
+        <Navbar />
+      </div>
+      <div className="lg:hidden">
+        <HamburgerNav />
+      </div>
       <EmailSection />
       <Hero />
       <Socials />

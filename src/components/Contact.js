@@ -58,7 +58,7 @@ function Contact() {
           </div>
         </form>
       </div>
-      <div className="mt-10 w-10/12 mx-auto flex justify-around md:hidden">
+      <div className="mt-10 w-10/12 mx-auto flex justify-around lg:hidden">
         <a className="" href="https://twitter.com/SujalSamai">
           <img
             className="w-7/12 mx-auto p-2 hover:-translate-y-1 hover:transition ease-out duration-200 rounded-3xl hover:bg-gr"

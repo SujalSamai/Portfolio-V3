@@ -1,11 +1,53 @@
 import list from "../assets/list.svg";
 import computer from "../assets/computer.png";
 import "../App.css";
+
+const skillsArr = [
+  {
+    heading: "Languages",
+    tech: "Java, C/C++, Javascript, Python, HTML5, CSS, SQL",
+  },
+  {
+    heading: "Frameworks/Libraries",
+    tech: "React, Tailwind CSS, Bootstrap",
+  },
+  {
+    heading: "Tools",
+    tech: "Git, Github, Appwrite, VS Code, Intellij IDEA",
+  },
+  {
+    heading: "Databases",
+    tech: "MySQL, Appwrite",
+  },
+  {
+    heading: "Others",
+    tech: "Data Structures & Algorithm, Technical Writing, Team Management",
+  },
+];
+
+const skillsEl = skillsArr.map((skill) => {
+  return (
+    <SkillCard key={skill.heading} heading={skill.heading} tech={skill.tech} />
+  );
+});
+
+function SkillCard(props) {
+  return (
+    <div className="my-5">
+      <h4 className="text-gr font-martian text-sm">{props.heading}</h4>
+      <p className="my-3 flex text-sm">
+        <img className="mr-2 w-3" src={list}></img>
+        {props.tech}
+      </p>
+    </div>
+  );
+}
+
 export default function Skills() {
   return (
     <section
       id="skills"
-      className="w-10/12 md:w-7/12 mx-auto hover:scale-105 hover:transition ease-in-out duration-300 rounded-sm p-8 md:p-16 shadow-2xl"
+      className="w-10/12 lg:w-7/12 mx-auto hover:scale-105 hover:transition ease-in-out duration-300 rounded-sm p-8 md:p-16 shadow-2xl"
     >
       <div className="md:w-7/12 flex justify-between items-center">
         <h1 className="text-xl md:text-2xl text-slate-300 font-inter font-bold">
@@ -15,45 +57,7 @@ export default function Skills() {
         <p className="w-7/12 md:w-8/12 border-t-[1px] border-slate-600"></p>
       </div>
       <div className="flex mt-8">
-        <div className="flex-col text-slate-400 md:w-7/12">
-          <div className="my-5">
-            <h4 className="text-gr font-martian text-sm">Languages</h4>
-            <p className="my-3 flex text-sm">
-              <img className="mr-2 w-3" src={list}></img>
-              Java, C/C++, Javascript, Python, HTML5, CSS, SQL
-            </p>
-          </div>
-          <div className="my-5">
-            <h4 className="text-gr font-martian text-sm">
-              Frameworks/Libraries
-            </h4>
-            <p className="my-3 flex text-sm">
-              <img className="mr-2 w-3" src={list}></img>
-              React, Tailwind CSS, Bootstrap
-            </p>
-          </div>
-          <div className="my-5">
-            <h4 className="text-gr font-martian text-sm">Tools</h4>
-            <p className="my-3 flex text-sm">
-              <img className="mr-2 w-3" src={list}></img>
-              Git, Github, Appwrite, VS Code, Intellij IDEA
-            </p>
-          </div>
-          <div className="my-5">
-            <h4 className="text-gr font-martian text-sm">Databases</h4>
-            <p className="my-3 flex text-sm">
-              <img className="mr-2 w-3" src={list}></img>
-              MySQL, Appwrite
-            </p>
-          </div>
-          <div className="my-5">
-            <h4 className="text-gr font-martian text-sm">Others</h4>
-            <p className="my-3 flex text-sm">
-              <img className="mr-2 w-3" src={list}></img>
-              Data Structures & Algorithm, Technical Writing, Team Management
-            </p>
-          </div>
-        </div>
+        <div className="flex-col text-slate-400 md:w-7/12">{skillsEl}</div>
         <div className="hidden md:block w-5/12">
           <img className="computer" src={computer}></img>
         </div>

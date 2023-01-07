@@ -1,6 +1,7 @@
 import logo from "../assets/action.png";
 import "../App.css";
 import Resume from "../assets/Resume.pdf";
+
 function Navbar() {
   return (
     <nav

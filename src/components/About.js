@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-10/12 md:w-7/12 mx-auto my-[15rem] flex flex-col "
+      className="w-10/12 lg:w-7/12 mx-auto my-[15rem] flex flex-col "
     >
       <div className="md:w-6/12 flex justify-between items-center">
         <h1 className="text-xl md:text-2xl text-slate-300 font-inter font-bold">
