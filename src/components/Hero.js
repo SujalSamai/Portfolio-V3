@@ -36,7 +36,7 @@ function Hero() {
           />
           <a
             href="mailto:sujalsamai123@gmail.com"
-            className="my-10 w-4/6 border-2 border-gr text-xs lg:text-base text-left text-gr flex justify-start items-center  hover:bg-lbl"
+            className="my-10 lg:w-4/6 border-2 border-gr text-base text-left text-gr flex justify-start items-center  hover:bg-lbl"
           >
             <img
               className="mr-5 lg:mr-10 border-r-[1px] p-4 w-2/12 border-gr"

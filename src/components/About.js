@@ -37,14 +37,14 @@ export default function About() {
             Here are a few technologies I’ve been working with recently:
           </p>
           <div className="w-[70%] flex text-sm">
-            <ul className="mr-12 md:mr-20 text-gr">
-              <li className="p-1 flex">
+            <ul className="mr-15 md:mr-20 text-gr">
+              <li className="p-1 pr-5 flex">
                 <img className="w-1/12 mr-2" src={list}></img>React.js
               </li>
-              <li className="p-1 flex">
+              <li className="p-1 pr-5 flex">
                 <img className="w-1/12 mr-2" src={list}></img>Tailwind CSS
               </li>
-              <li className="p-1 flex">
+              <li className="p-1 pr-5 flex">
                 <img className="w-1/12 mr-2" src={list}></img>TypeScript
               </li>
             </ul>
@@ -63,7 +63,7 @@ export default function About() {
         </div>
         <div className="mt-10 md:m-0 flex justify-center">
           <img
-            className="bg-gray-300 rounded-md w-4/6 h-min shadow-[20px_20px] shadow-gr hover:shadow-[15px_15px] hover:shadow-gr hover:transition ease-out duration-500"
+            className="bg-gray-300 rounded-md w-4/6 md:h-min shadow-[20px_20px] shadow-gr hover:shadow-[15px_15px] hover:shadow-gr hover:transition ease-out duration-500"
             src={me}
           ></img>
         </div>
