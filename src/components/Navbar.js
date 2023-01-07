@@ -8,7 +8,10 @@ function Navbar() {
       id="navbar"
       className="px-10 py-4 text-slate-50 flex items-center justify-between align-middle shadow-sm transition ease-out"
     >
-      <img className="logo w-[12%] md:w-[5%]" src={logo}></img>
+      <img
+        className="logo w-[12%] md:w-[5%] hover:animate-spin"
+        src={logo}
+      ></img>
       <div className="w-5/12 h-1/2 flex justify-between font-martian text-xs">
         <ol className="w-10/12 flex  justify-around p-2 text-slate-300">
           <li className="nav-el hover:text-gr hover:transition ease-out">

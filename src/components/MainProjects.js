@@ -63,13 +63,13 @@ function MainProjectCard(props) {
           </p>
           <div className="flex justify-end">
             <a
-              className="hover:scale-110 hover:transition-all"
+              className="hover:scale-110 hover:transition-all animate-pulse"
               href={props.github}
             >
               <img className="w-5 mx-4" src={github}></img>
             </a>
             <a
-              className="hover:scale-110 hover:transition-all"
+              className="hover:scale-110 hover:transition-all animate-pulse"
               href={props.live}
             >
               <img className="w-5" src={link}></img>
