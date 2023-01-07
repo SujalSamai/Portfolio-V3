@@ -1,6 +1,9 @@
 import list from "../assets/list.svg";
 import computer from "../assets/computer.png";
 import "../App.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const skillsArr = [
   {
@@ -33,7 +36,12 @@ const skillsEl = skillsArr.map((skill) => {
 
 function SkillCard(props) {
   return (
-    <div className="my-5">
+    <div
+      data-aos="fade-left"
+      data-aos-easing="ease-in"
+      data-aos-duration="2000"
+      className="my-5"
+    >
       <h4 className="text-gr font-martian text-sm">{props.heading}</h4>
       <p className="my-3 flex text-sm">
         <img className="mr-2 w-3" src={list}></img>
@@ -44,9 +52,15 @@ function SkillCard(props) {
 }
 
 export default function Skills() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section
       id="skills"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="1500"
       className="w-10/12 lg:w-7/12 mx-auto hover:scale-105 hover:transition ease-in-out duration-300 rounded-sm p-8 md:p-16 shadow-2xl"
     >
       <div className="md:w-7/12 flex justify-between items-center">

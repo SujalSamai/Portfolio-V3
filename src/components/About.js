@@ -1,9 +1,20 @@
 import me from "../assets/me.png";
 import list from "../assets/list.svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function About() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section
       id="about"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="1500"
       className="w-10/12 lg:w-7/12 mx-auto my-[15rem] flex flex-col "
     >
       <div className="md:w-6/12 flex justify-between items-center">
@@ -36,7 +47,12 @@ export default function About() {
           <p className="mb-5 text-sm md:text-base bg-bl">
             Here are a few technologies I’ve been working with recently:
           </p>
-          <div className="w-[70%] flex text-sm">
+          <div
+            data-aos="fade-left"
+            data-aos-easing="ease-in"
+            data-aos-duration="1000"
+            className="w-[70%] flex text-sm"
+          >
             <ul className="mr-15 md:mr-20 text-gr">
               <li className="p-1 pr-5 flex">
                 <img className="w-1/12 mr-2" src={list}></img>React.js
@@ -61,7 +77,7 @@ export default function About() {
             </ul>
           </div>
         </div>
-        <div className="mt-10 md:m-0 flex justify-center">
+        <div data-aos="fade" className="mt-10 md:m-0 flex justify-center">
           <img
             className="bg-gray-300 rounded-md w-4/6 md:h-min shadow-[20px_20px] shadow-gr hover:shadow-[15px_15px] hover:shadow-gr hover:transition ease-out duration-500"
             src={me}

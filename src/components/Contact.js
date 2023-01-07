@@ -3,10 +3,22 @@ import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
 import hashnode from "../assets/hashnode.svg";
 import instagram from "../assets/instagram.svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Contact() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <section id="contact" className="w-10/12 md:w-5/12 m-auto">
+    <section
+      data-aos="fade-up"
+      data-aos-easing="ease-in"
+      data-aos-duration="2000"
+      id="contact"
+      className="w-10/12 md:w-5/12 m-auto"
+    >
       <h4 className="text-gr md:text-base font-martian text-center">
         04. What's next?
       </h4>
@@ -20,7 +32,12 @@ function Contact() {
           sujalsamai123@gmail.com
         </span>
       </p>
-      <div className="py-10 w-10/12 mx-auto text-slate-200">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-in"
+        data-aos-duration="2000"
+        className="py-10 w-10/12 mx-auto text-slate-200"
+      >
         <form
           action="https://formspree.io/f/mdobvqal"
           method="POST"

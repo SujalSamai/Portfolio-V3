@@ -1,6 +1,9 @@
 import data from "./MPArr";
 import github from "../assets/github.svg";
 import link from "../assets/link.svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function MainProjectCard(props) {
   const img = (
@@ -16,7 +19,12 @@ function MainProjectCard(props) {
   let imgUrl = props.img;
   if (props.index === 2) {
     return (
-      <div className="flex py-16">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in"
+        className="flex py-16"
+      >
         <div className="lg:w-2/4 z-10 text-slate-200 p-4 shadow-2xl md:shadow-none]">
           <p className="text-gr font-martian text-xs">Featured Project</p>
           <h2 className="text-slate-300 text-3xl font-bold mb-4">
@@ -48,7 +56,12 @@ function MainProjectCard(props) {
     );
   } else {
     return (
-      <div className="flex py-16">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in"
+        className="flex py-16"
+      >
         {img}
         <div className="lg:w-2/4 z-10 text-slate-200 p-4 text-right shadow-2xl md:shadow-none">
           <p className="text-gr font-martian text-xs">Featured Project</p>
@@ -82,6 +95,9 @@ function MainProjectCard(props) {
 }
 
 function MainProjects() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const projectsEl = data.map((project) => {
     return (
       <MainProjectCard
@@ -100,6 +116,9 @@ function MainProjects() {
     <section
       id="work"
       className="w-10/12 lg:w-7/12 mx-auto my-[15rem] flex flex-col "
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="1800"
     >
       <div className="md:w-10/12 flex justify-between items-center">
         <h1 className="text-xl md:text-2xl text-slate-300 font-inter font-bold">

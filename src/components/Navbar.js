@@ -1,8 +1,14 @@
 import logo from "../assets/action.png";
 import "../App.css";
 import Resume from "../assets/Resume.pdf";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Navbar() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <nav
       id="navbar"
@@ -13,7 +19,12 @@ function Navbar() {
         src={logo}
       ></img>
       <div className="w-5/12 h-1/2 flex justify-between font-martian text-xs">
-        <ol className="w-10/12 flex  justify-around p-2 text-slate-300">
+        <ol
+          data-aos="fade-down"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1000"
+          className="w-10/12 flex  justify-around p-2 text-slate-300"
+        >
           <li className="nav-el hover:text-gr hover:transition ease-out">
             <a href="#about">
               <span className="text-gr">1. </span>About
