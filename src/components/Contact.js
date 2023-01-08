@@ -15,7 +15,7 @@ function Contact() {
     <section
       data-aos="fade-up"
       data-aos-easing="ease-in"
-      data-aos-duration="2000"
+      data-aos-duration="1500"
       id="contact"
       className="w-10/12 md:w-5/12 m-auto"
     >
@@ -35,7 +35,7 @@ function Contact() {
       <div
         data-aos="fade-up"
         data-aos-easing="ease-in"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
         className="py-10 w-10/12 mx-auto text-slate-200"
       >
         <form

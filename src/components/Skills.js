@@ -61,7 +61,7 @@ export default function Skills() {
       data-aos="fade-up"
       data-aos-easing="ease-in-out"
       data-aos-duration="1500"
-      className="w-10/12 lg:w-7/12 mx-auto hover:scale-105 hover:transition ease-in-out duration-300 rounded-sm p-8 md:p-16 shadow-2xl"
+      className="w-10/12 backdrop-blur-lg lg:w-7/12 mx-auto hover:scale-105 hover:transition ease-in-out duration-300 rounded-sm p-8 md:p-16 shadow-2xl"
     >
       <div className="md:w-7/12 flex justify-between items-center">
         <h1 className="text-xl md:text-2xl text-slate-300 font-inter font-bold">

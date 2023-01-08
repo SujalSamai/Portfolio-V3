@@ -8,10 +8,13 @@ function HamburgerNav() {
   return (
     <nav
       id="navbar"
-      className="px-5 py-4 text-slate-50 flex justify-between items-center align-middle shadow-sm transition ease-out"
+      className="w-full px-5 py-2 text-slate-50 flex justify-between items-center align-middle shadow-sm transition ease-out"
     >
-      <img className="logo w-[15%] hover:animate-spin" src={logo}></img>
-      <div className="flex items-center justify-between border-gray-400 py-8">
+      <img
+        className="logo w-[15%] md:w-[12%] hover:animate-spin"
+        src={logo}
+      ></img>
+      <div className="flex items-center justify-between border-gray-400 py-8 transition-all ease-out delay-200">
         <section className="MOBILE-MENU flex lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2 hover:cursor-pointer"
@@ -25,7 +28,7 @@ function HamburgerNav() {
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             {" "}
             <div
-              className="CROSS-ICON absolute top-0 right-0 px-8 py-8 hover:cursor-pointer"
+              className="CROSS-ICON absolute top-0 right-0 px-8 py-8 hover:cursor-pointer transition-all ease-out delay-200"
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
             >
               <svg
@@ -41,7 +44,7 @@ function HamburgerNav() {
                 <line x1="6" y1="10" x2="20" y2="26" />
               </svg>
             </div>
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col font-martian items-center justify-between min-h-[250px] shadow-lg p-20">
+            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col font-martian text-center items-center justify-between min-h-[250px] p-20">
               <li className="my-8 text-slate-300 hover:text-gr w-32">
                 <a href="#about">
                   <span className="text-gr">1. </span>About
@@ -71,17 +74,7 @@ function HamburgerNav() {
             </ul>
           </div>
         </section>
-        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
+
         <style>{`
       .hideMenuNav {
         display: none;

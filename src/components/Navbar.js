@@ -9,10 +9,11 @@ function Navbar() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
     <nav
       id="navbar"
-      className="px-10 py-4 text-slate-50 flex items-center justify-between align-middle shadow-sm transition ease-out"
+      className="w-full px-10 py-4 text-slate-50 flex items-center justify-between align-middle shadow-sm transition-all delay-300 ease-out"
     >
       <img
         className="logo w-[12%] md:w-[5%] hover:animate-spin"
