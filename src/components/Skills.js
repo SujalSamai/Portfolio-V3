@@ -39,7 +39,7 @@ function SkillCard(props) {
     <div
       data-aos="fade-left"
       data-aos-easing="ease-in"
-      data-aos-duration="2000"
+      data-aos-duration="1000"
       className="my-5"
     >
       <h4 className="text-gr font-martian text-sm">{props.heading}</h4>

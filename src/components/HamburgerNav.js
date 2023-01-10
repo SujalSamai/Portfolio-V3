@@ -7,8 +7,8 @@ function HamburgerNav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <nav
-      id="navbar"
-      className="w-full px-5 py-2 text-slate-50 flex justify-between items-center align-middle shadow-sm transition ease-out"
+      id="ham-navbar"
+      className="nav w-full px-5 py-2 text-slate-50 flex justify-between items-center align-middle shadow-sm transition ease-out"
     >
       <img
         className="logo w-[15%] md:w-[12%] hover:animate-spin"

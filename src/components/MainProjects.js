@@ -21,7 +21,7 @@ function MainProjectCard(props) {
     return (
       <div
         data-aos="fade-right"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         data-aos-easing="ease-in"
         className="flex py-16"
       >

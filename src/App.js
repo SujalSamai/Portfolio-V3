@@ -9,10 +9,11 @@ import Contact from "./components/Contact";
 import Socials from "./components/Socials";
 import EmailSection from "./components/EmailSection";
 import HamburgerNav from "./components/HamburgerNav";
+import TopArrow from "./components/TopArrow";
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-bl to-lbl font-inter h-max">
+    <div id="app" className="bg-gradient-to-b from-bl to-lbl font-inter h-max">
       <div className="hidden lg:block">
         <Navbar />
       </div>
@@ -20,6 +21,7 @@ function App() {
         <HamburgerNav />
       </div>
       <EmailSection />
+      <TopArrow />
       <Hero />
       <Socials />
       <About />
