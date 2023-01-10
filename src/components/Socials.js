@@ -31,7 +31,7 @@ export default function Socials() {
           src={hashnode}
         ></img>
       </a>
-      <a className="" href="#">
+      <a className="" href="https://www.instagram.com/sujalsamai/">
         <img
           className="w-4/6 p-2 hover:-translate-y-1 hover:transition ease-out duration-200 rounded-3xl hover:bg-gr"
           src={instagram}
