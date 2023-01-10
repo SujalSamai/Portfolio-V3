@@ -20,8 +20,8 @@ function MainProjectCard(props) {
   if (props.index === 2) {
     return (
       <div
-        data-aos="fade-right"
-        data-aos-duration="1000"
+        data-aos="fade-up"
+        data-aos-duration="1500"
         data-aos-easing="ease-in"
         className="flex py-16"
       >
@@ -57,8 +57,8 @@ function MainProjectCard(props) {
   } else {
     return (
       <div
-        data-aos="fade-left"
-        data-aos-duration="2000"
+        data-aos="fade-up"
+        data-aos-duration="1500"
         data-aos-easing="ease-in"
         className="flex py-16"
       >

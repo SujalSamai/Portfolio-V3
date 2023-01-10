@@ -37,7 +37,7 @@ const skillsEl = skillsArr.map((skill) => {
 function SkillCard(props) {
   return (
     <div
-      data-aos="fade-left"
+      data-aos="fade-in"
       data-aos-easing="ease-in"
       data-aos-duration="1000"
       className="my-5"
