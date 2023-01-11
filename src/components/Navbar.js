@@ -27,24 +27,16 @@ function Navbar() {
           className="w-10/12 flex  justify-around p-2 text-slate-300"
         >
           <li className="nav-el hover:text-gr hover:transition ease-out">
-            <a href="#about">
-              <span className="text-gr">1. </span>About
-            </a>
+            <a href="#about">ABOUT</a>
           </li>
           <li className="nav-el hover:text-gr hover:transition ease-out">
-            <a href="#skills">
-              <span className="text-gr">2. </span>Skills
-            </a>
+            <a href="#skills">SKILLS</a>
           </li>
           <li className="nav-el hover:text-gr hover:transition ease-out">
-            <a href="#work">
-              <span className="text-gr">3. </span>Work
-            </a>
+            <a href="#work">WORK</a>
           </li>
           <li className="nav-el hover:text-gr hover:transition ease-out">
-            <a href="#contact">
-              <span className="text-gr">4. </span>Contact
-            </a>
+            <a href="#contact">CONTACT</a>
           </li>
         </ol>
         <a

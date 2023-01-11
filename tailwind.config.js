@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bl: "#0a192f",
-        lbl: "#112240",
-        gr: "#64ffda",
+        bl: "#111111",
+        lbl: "#282A3A",
+        gr: "#ba9043",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

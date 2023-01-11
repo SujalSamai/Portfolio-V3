@@ -46,24 +46,16 @@ function HamburgerNav() {
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col font-martian text-center items-center justify-between min-h-[250px] p-20">
               <li className="my-8 text-slate-300 hover:text-gr w-32">
-                <a href="#about">
-                  <span className="text-gr">1. </span>About
-                </a>
+                <a href="#about">ABOUT</a>
               </li>
               <li className="my-8 text-slate-300 hover:text-gr w-32">
-                <a href="#skills">
-                  <span className="text-gr">2. </span>Skills
-                </a>
+                <a href="#skills">SKILLS</a>
               </li>
               <li className="my-8 text-slate-300 hover:text-gr w-32">
-                <a href="#work">
-                  <span className="text-gr">3. </span>Work
-                </a>
+                <a href="#work">WORK</a>
               </li>
               <li className="my-8 text-slate-300 hover:text-gr w-32">
-                <a href="#contact">
-                  <span className="text-gr">4. </span>Contact
-                </a>
+                <a href="#contact">CONTACT</a>
               </li>
               <a
                 href={Resume}
@@ -86,7 +78,7 @@ function HamburgerNav() {
         height: 100vh;
         top: 0;
         right: 0;
-        background: #112240;
+        background: #282A3A;
         z-index: 10;
         display: flex;
         flex-direction: column;
