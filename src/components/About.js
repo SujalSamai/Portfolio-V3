@@ -1,4 +1,4 @@
-import me from "../assets/me.png";
+import me from "../assets/MyImg.png";
 import list from "../assets/list.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
