@@ -20,7 +20,7 @@ function Contact() {
       className="w-10/12 md:w-5/12 m-auto"
     >
       <h4 className="text-gr md:text-base font-martian text-center">
-        04. What's next?
+        04. Convinced to Hire me?
       </h4>
       <h1 className="my-5 text-slate-300 text-5xl font-bold text-center">
         Get in Touch.
@@ -112,7 +112,12 @@ function Contact() {
           Built with React & Tailwind CSS.
         </p>
         <p className="text-slate-500 text-center font-martian text-[0.65rem] md:text-xs pt-2 pb-5">
-          by Sujal Samai 💖
+          Inspired from{" "}
+          <a className=" underline" href="https://brittanychiang.com/">
+            {" "}
+            Brittany Chiang
+          </a>
+          .
         </p>
       </div>
     </section>
