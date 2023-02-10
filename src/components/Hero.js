@@ -3,13 +3,13 @@ import logo from "../assets/coder.png";
 import emailImg from "../assets/email.png";
 function Hero() {
   return (
-    <main className="w-10/12 lg:w-7/12 mx-auto my-14">
+    <main className="w-10/12 lg:w-7/12 mx-auto pt-36">
       <p className="text-gr font-martian">Hi, my name is</p>
       <h1 className="text-5xl lg:text-7xl text-slate-50 my-7 font-bold">
         Sujal Samai.
       </h1>
       <h2 className="text-4xl lg:text-6xl text-slate-400 font-bold">
-        I build things for the web.
+        Developer and content writer.
       </h2>
       <div className="my-5 flex justify-between">
         <img src={logo} className="hero-img hidden lg:block" alt="logo" />

@@ -8,7 +8,7 @@ function HamburgerNav() {
   return (
     <nav
       id="ham-navbar"
-      className="nav w-full px-5 py-2 text-slate-50 flex justify-between items-center align-middle shadow-sm transition ease-out"
+      className="nav bg-transparent backdrop-blur-sm z-50 fixed top-0 w-full px-5 text-slate-50 flex justify-between items-center align-middle shadow-sm transition ease-out"
     >
       <img
         className="logo w-[15%] md:w-[12%] hover:animate-spin"
