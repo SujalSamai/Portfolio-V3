@@ -20,7 +20,7 @@ function Contact() {
       className="w-10/12 md:w-5/12 m-auto"
     >
       <h4 className="text-gr md:text-base font-martian text-center">
-        04. Convinced to Hire me?
+        05. Convinced to Hire me?
       </h4>
       <h1 className="my-5 text-slate-300 text-5xl font-bold text-center">
         Get in Touch.

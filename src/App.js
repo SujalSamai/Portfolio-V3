@@ -10,6 +10,7 @@ import Socials from "./components/Socials";
 import EmailSection from "./components/EmailSection";
 import HamburgerNav from "./components/HamburgerNav";
 import TopArrow from "./components/TopArrow";
+import Current from "./components/Current";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <About />
       <Skills />
       <MainProjects />
+      <Current />
       <Contact />
     </div>
   );

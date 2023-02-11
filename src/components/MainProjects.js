@@ -115,7 +115,7 @@ function MainProjects() {
   return (
     <section
       id="work"
-      className="w-10/12 lg:w-7/12 mx-auto my-[15rem] flex flex-col "
+      className="w-10/12 lg:w-7/12 mx-auto my-[12rem] flex flex-col "
       data-aos="fade-up"
       data-aos-easing="ease-in-out"
       data-aos-duration="1800"
