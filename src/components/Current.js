@@ -19,27 +19,31 @@ export default function Current() {
           <span className="font-martian text-gr text-sm md:text-3xl">04. </span>
           Currently working on...
         </h1>
+        <p className="w-3/12 md:w-4/12 border-t-[1px] border-slate-600"></p>
       </div>
       <p className="text-slate-400 mt-5">
         An exclusive sneak-peak into what I'm building currently 👀
       </p>
-      <div className="flex flex-col w-11/12 mx-auto md:ml-32  mt-10">
-        <a href="https://github.com/MadhaviGupta/GitShow">
-          <img
-            src={gitshow}
-            className="shadow-xl grayscale-[50%] hover:grayscale-0"
-          ></img>
-        </a>
-        <div className="text-slate-400 py-10 px-20 border-[1px] border-slate-700 hover:bg-lbl cursor-pointer">
-          <h4 className="text-xl text-slate-200 font-bold my-5">
-            What is it about?
-          </h4>
-          <p className="">
-            A Social-Media platform based on Github, whose main focus is to give
-            you a platform your Github projects in a beautiful way, so that you
-            can focus on the project and we can focus on taking it to the
-            masses.
-          </p>
+      <div className="flex mt-10">
+        <div className="w-2 bg-gr bg-opacity-60 hidden md:block rounded-full "></div>
+        <div className="flex flex-col md:w-11/12 mx-auto">
+          <a href="https://github.com/MadhaviGupta/GitShow">
+            <img
+              src={gitshow}
+              className="shadow-xl grayscale-[50%] hover:grayscale-0"
+            ></img>
+          </a>
+          <div className="text-slate-400 py-10 md:px-20 px-10 border-[1px] border-slate-700 hover:bg-lbl cursor-pointer">
+            <h4 className="text-xl text-slate-200 font-bold my-5">
+              What is it about?
+            </h4>
+            <p className="">
+              A Social-Media platform based on Github, whose main focus is to
+              give you a platform your Github projects in a beautiful way, so
+              that you can focus on the project and we can focus on taking it to
+              the masses.
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -79,7 +79,7 @@ export default function About() {
         </div>
         <div data-aos="fade" className="mt-10 md:m-0 flex justify-center">
           <img
-            className="bg-gray-300 rounded-md w-4/6 md:h-min shadow-[20px_20px] shadow-gr hover:shadow-[15px_15px] hover:shadow-gr hover:transition ease-out duration-500"
+            className="bg-gray-300 rounded-md grayscale-[60%] hover:grayscale-0 w-4/6 md:h-min shadow-[20px_20px] shadow-gr hover:shadow-[15px_15px] hover:shadow-gr hover:transition ease-out duration-500"
             src={me}
           ></img>
         </div>

@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav
       id="navbar"
-      className="nav fixed top-0 backdrop-blur-sm z-50 w-full px-10 py-4 text-slate-50 flex items-center justify-between align-middle shadow-sm transition-all delay-300 ease-out"
+      className="nav fixed top-0 backdrop-blur-sm z-50 w-full px-10 py-4 text-slate-50 flex items-center justify-between align-middle shadow-lg transition-all delay-300 ease-out"
     >
       <img
         className="logo w-[12%] md:w-[5%] hover:animate-spin"

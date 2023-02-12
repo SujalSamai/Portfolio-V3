@@ -7,10 +7,10 @@ import { useEffect } from "react";
 
 function MainProjectCard(props) {
   const img = (
-    <div className="hidden lg:block w-[65%] hover:transition ease-out duration-500 cursor-pointer shadow-lg hover:-translate-y-4">
+    <div className="absolute opacity-20 md:opacity-100 md:static lg:block md:w-[65%] hover:transition ease-out duration-500 cursor-pointer shadow-lg hover:-translate-y-4">
       <a href={props.live}>
         <img
-          className="grayscale-[70%] w-[40rem] z-0 h-[100%] hover:grayscale-0"
+          className="md:grayscale-[70%] w-[40rem] z-0 h-[100%] hover:grayscale-0"
           src={props.img}
         ></img>
       </a>
