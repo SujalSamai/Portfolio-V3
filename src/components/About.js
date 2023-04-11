@@ -48,7 +48,7 @@ export default function About() {
             Here are a few technologies I’ve been working with recently:
           </p>
           <div
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-easing="ease-in"
             data-aos-duration="1000"
             className="w-[70%] flex text-sm"

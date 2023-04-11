@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const skillsArr = [
   {
     heading: "Languages",
-    tech: "Java, C/C++, Javascript, Python, HTML5, CSS, SQL",
+    tech: "Java, C/C++, Javascript, Python, HTML5, CSS, SQL, TypeScript",
   },
   {
     heading: "Frameworks/Libraries",
@@ -16,11 +16,11 @@ const skillsArr = [
   },
   {
     heading: "Tools",
-    tech: "Git, Github, Appwrite, VS Code, Intellij IDEA",
+    tech: "Git, Github, Appwrite, VS Code, Intellij IDEA, Firebase, POSTMAN",
   },
   {
     heading: "Databases",
-    tech: "MySQL, Appwrite",
+    tech: "MySQL, Appwrite, FireStore",
   },
   {
     heading: "Others",

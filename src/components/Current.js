@@ -30,11 +30,11 @@ export default function Current() {
           <a href="https://github.com/MadhaviGupta/GitShow">
             <img
               src={gitshow}
-              className="shadow-xl grayscale-[50%] hover:grayscale-0"
+              className="shadow-xl h-[105%] md:h-auto grayscale-[50%] hover:grayscale-0"
             ></img>
           </a>
           <div className="text-slate-400 py-10 md:px-20 px-10 border-[1px] border-slate-700 hover:bg-lbl cursor-pointer">
-            <h4 className="text-xl text-slate-200 font-bold my-5">
+            <h4 className="text-lg md:text-xl text-slate-200 font-bold my-5">
               What is it about?
             </h4>
             <p className="">

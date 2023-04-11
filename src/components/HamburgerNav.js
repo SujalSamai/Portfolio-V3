@@ -8,13 +8,13 @@ function HamburgerNav() {
   return (
     <nav
       id="ham-navbar"
-      className="nav bg-transparent backdrop-blur-sm z-50 fixed top-0 w-full px-5 text-slate-50 flex justify-between items-center align-middle shadow-lg transition ease-out"
+      className="nav bg-transparent backdrop-blur-sm z-50 fixed top-0 w-full px-5 text-slate-50 flex justify-between items-center align-middle shadow-lg transition ease-out duration-700"
     >
       <img
         className="logo w-[15%] md:w-[12%] hover:animate-spin"
         src={logo}
       ></img>
-      <div className="flex items-center justify-between border-gray-400 py-8 transition-all ease-out delay-200">
+      <div className="flex items-center justify-between border-gray-400 py-8 transition-all ease-out duration-700">
         <section className="MOBILE-MENU flex lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2 hover:cursor-pointer"
@@ -28,7 +28,7 @@ function HamburgerNav() {
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             {" "}
             <div
-              className="CROSS-ICON absolute top-0 right-0 px-8 py-8 hover:cursor-pointer transition-all ease-out delay-200"
+              className="CROSS-ICON absolute top-0 right-0 px-8 py-8 hover:cursor-pointer transition-all ease-out duration-700"
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
             >
               <svg
@@ -84,7 +84,7 @@ function HamburgerNav() {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        transition: ease-in 5s;
+        transition: ease-in 10s;
       }
     `}</style>
       </div>

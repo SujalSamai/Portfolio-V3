@@ -111,9 +111,12 @@ function Contact() {
         <p className="text-slate-500 text-center font-martian text-[0.65rem] md:text-xs pt-5">
           Built with React & Tailwind CSS.
         </p>
-        <p className="text-slate-500 text-center font-martian text-[0.65rem] md:text-xs pt-2 pb-5">
+        <p className="text-slate-500 text-center font-martian text-[0.6rem] pt-2 pb-5">
           Inspired from{" "}
-          <a className=" underline" href="https://brittanychiang.com/">
+          <a
+            className="underline hover:text-gr"
+            href="https://brittanychiang.com/"
+          >
             {" "}
             Brittany Chiang
           </a>
